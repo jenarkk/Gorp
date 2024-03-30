@@ -10,4 +10,4 @@ register("chat", () => {
     if(config.autoKick){
         ChatLib.say("/p kick Redshotz")
     }
-}).setCriteria("Redshotz joined the party.").setContains()
+}).setCriteria("RedShotz joined the party.").setContains()
