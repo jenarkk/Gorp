@@ -1,12 +1,7 @@
-###Gorp Chattriggers Module for Hypixel Skyblock
+Gorp Chattriggers Module for Hypixel Skyblock
 
-##Features
-
-#Dungeons
+Features
 
 Leap reminder
-
-#General
-
 Auto kick
 Party Commands
