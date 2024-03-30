@@ -8,6 +8,12 @@ register("chat", () => {
 
 register("chat", () => {
   if(config.partyCommands){
+    ChatLib.chat("&b&k&lwwwww\n&b&l-help &r&8/ &7Displays this message. \n&b&l-leader &r&8/ &7Invites the Gorp leader to the party. \n&b&l-walrus &r&8/ &7Walrus. \n&b&l-gorp &r&8/ &7Shows how many times Gorp has been said.\n&b&k&lwwwww")
+  }
+}).setCriteria("-help").setContains()
+
+register("chat", () => {
+  if(config.partyCommands){
     ChatLib.say("/p bajhi")
   }
 }).setCriteria("-leader").setContains()
