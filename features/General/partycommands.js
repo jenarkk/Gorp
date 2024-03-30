@@ -1,4 +1,5 @@
 import config from "../../config"
+import variables from "../../utils/variables"
 
 gorpcounter = 0
 
@@ -8,24 +9,25 @@ register("chat", () => {
 
 register("chat", () => {
   if(config.partyCommands){
-    ChatLib.chat("&b&k&lwwwww\n&b&l-help &r&8/ &7Displays this message. \n&b&l-leader &r&8/ &7Invites the Gorp leader to the party. \n&b&l-walrus &r&8/ &7Walrus. \n&b&l-gorp &r&8/ &7Shows how many times Gorp has been said.\n&b&k&lwwwww")
+    ChatLib.chat(` \n${variables.PREFIX}\n&b&l-help &r&8&kw&r &7Displays this message. \n&b&l-leader &r&8&kw&r &7Invites the Gorp leader to the party. \n&b&l-walrus &r&8&kw&r &7Walrus. \n&b&l-gorp &r&8&kw&r &7Shows how many times Gorp has been said.\n `)
   }
 }).setCriteria("-help").setContains()
 
 register("chat", () => {
   if(config.partyCommands){
+    ChatLib.chat(`${variables.PREFIX}The Gorp leader has been partied.`)
     ChatLib.say("/p bajhi")
   }
 }).setCriteria("-leader").setContains()
 
 register("chat", () => {
   if(config.partyCommands){
-    ChatLib.say("The walrus (Odobenus rosmarus) is a large pinniped marine mammal with discontinuous distribution about the North Pole in the Arctic Ocean and subarctic seas of the Northern Hemisphere.")
+    ChatLib.say(`The walrus (Odobenus rosmarus) is a large pinniped marine mammal with discontinuous distribution about the North Pole in the Arctic Ocean and subarctic seas of the Northern Hemisphere.`)
   }
 }).setCriteria("-walrus").setContains()
 
 register("chat", () => {
   if(config.partyCommands){
-    ChatLib.say("gorp has been said " + gorpcounter + " times")
+    ChatLib.say(`Gorp has been said ` + gorpcounter + ` times.`)
   }
 }).setCriteria("-gorp").setContains()
