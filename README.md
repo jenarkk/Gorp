@@ -1,4 +1,4 @@
-Gorp Chattriggers Module for Hypixel Skyblock
+Gorp CT Module Version 0.0.2
 
 Features
 
