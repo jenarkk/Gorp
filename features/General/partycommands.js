@@ -31,3 +31,10 @@ register("chat", () => {
     ChatLib.say(`Gorp has been said ` + gorpcounter + ` times.`)
   }
 }).setCriteria("-gorp").setContains()
+
+register("chat", () => {
+  if(config.partyCommands){
+    ChatLib.chat(`${variables.PREFIX}Ender pearls refilled.`)
+    ChatLib.command("pearlrefill", true)
+  }
+}).setCriteria("-pearls").setContains()
