@@ -12,7 +12,7 @@ import {
 
 @Vigilant("Gorp", "Gorp", {
     getCategoryComparator: () => (a, b) => {
-        const categories = ["General", "Dungeons"];
+        const categories = ["General", "Dungeons", "About"];
         return categories.indexOf(a.name) - categories.indexOf(b.name);
     }
 })
@@ -20,11 +20,6 @@ import {
 class config {
     
 // -----------------------------------------------------------
-
-
-// ------------------------- General
-
-// ---- Essentials
 
     @SwitchProperty({
         name: "Anti-Monkey",
@@ -34,8 +29,6 @@ class config {
     })
     autoKick = false;
 
-// ---- Party
-
     @SwitchProperty({
         name: "Party Commands",
         description: "A few nice commands to have",
@@ -43,10 +36,6 @@ class config {
         category: "General"
     })
     partyCommands = false;
-
-// ------------------------- Dungeons
-
-// ---- F7/M7
 
     @SwitchProperty({
         name: "Leap Reminder",
@@ -61,7 +50,7 @@ class config {
         description: 'Text for Leap Reminder',
         category: 'Dungeons',
         subcategory: 'F7/M7',
-        placeholder: 'Leap to Healer!',
+        placeholder: 'Leap to Healer!'
     })
     leapReminderText = '';
 
