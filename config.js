@@ -65,16 +65,6 @@ class config {
     })
     leapReminderText = '';
 
-// ---- Terminals
-
-    @SwitchProperty({
-        name: "Custom Terminal GUIs",
-        description: "Custom Terminal GUI (Coming soon)",
-        subcategory: 'Terminals',
-        category: "Dungeons"
-    })
-    customTermGui = false;
-
 // -----------------------------------------------------------
 
     constructor() {
