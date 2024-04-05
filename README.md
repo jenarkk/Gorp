@@ -1,9 +1,9 @@
-Gorp CT Module Version 0.0.2
+Gorp CT Module Version 0.0.3
 
-Features
+__Features__
 
-Leap reminder
-
-Auto kick
-
-Party Commands
+- Leap reminder
+- Auto kick
+- Party Commands
+- GFS Commands
+- Auto GFS
