@@ -31,7 +31,7 @@ class config {
 
     @SwitchProperty({
         name: "Auto GFS",
-        description: "Automatically GFS ender pearls at the start of runs. (UAYOR)",
+        description: "Automatically GFS ender pearls at the start of runs. &c[UAYOR]",
         subcategory: 'Sacks',
         category: "General"
     })
@@ -39,7 +39,7 @@ class config {
 
     @SwitchProperty({
         name: "Auto GFS Refill",
-        description: "Automatically GFS ender pearls when you run out. (UAYOR)",
+        description: "Automatically GFS ender pearls when you run out. &c[UAYOR]",
         subcategory: 'Sacks',
         category: "General"
     })
