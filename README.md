@@ -1,6 +1,6 @@
-Gorp Version 0.0.3
+__Gorp Version 0.0.3__
 
-__Features__
+_Features_
 
 - Leap reminder
 - Anti Monkey
