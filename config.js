@@ -47,7 +47,7 @@ class config {
 
     @SwitchProperty({
         name: "Party Commands",
-        description: "A few nice commands to have",
+        description: "A few nice commands to have (use -help in chat)",
         subcategory: 'Party',
         category: "General"
     })
