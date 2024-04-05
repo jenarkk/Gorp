@@ -1,4 +1,4 @@
-Gorp CT Module Version 0.0.3
+Gorp Version 0.0.3
 
 __Features__
 
