@@ -15,7 +15,7 @@ register("chat", () => {
 
 register("chat", () => {
   if(config.partyCommands){
-    ChatLib.chat(`${variables.PREFIX}The Gorp leader has been partied.`)
+    ChatLib.chat(`${variables.PREFIX}&7The Gorp leader has been partied.`)
     ChatLib.say("/p bajhi")
   }
 }).setCriteria("-leader").setContains()
@@ -28,13 +28,14 @@ register("chat", () => {
 
 register("chat", () => {
   if(config.partyCommands){
-    ChatLib.say(`Gorp has been said ` + gorpcounter + ` times.`)
+    ChatLib.say(`Gorp has been said ${gorpcounter} times.`)
   }
 }).setCriteria("-gorp").setContains()
 
 register("chat", () => {
   if(config.partyCommands){
-    ChatLib.chat(`${variables.PREFIX}Ender pearls refilled.`)
+    ChatLib.chat(`${variables.PREFIX}&7Your Ender Pearls have been refilled`)
+    ChatLib.say(`My Ender Pearls have been refilled`)
     ChatLib.command("pearlrefill", true)
   }
 }).setCriteria("-pearls").setContains()
