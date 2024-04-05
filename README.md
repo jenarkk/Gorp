@@ -6,5 +6,4 @@ _Features_
 - Anti Monkey
 - Party Commands
 - GFS Commands
-- GFS
 - GFS Refill
