@@ -24,7 +24,7 @@ class config {
     @SwitchProperty({
         name: "Anti-Monkey",
         description: "Automatically kicks known monkeys",
-        subcategory: 'Essentials',
+        subcategory: 'Party',
         category: "General"
     })
     autoKick = false;
@@ -39,7 +39,7 @@ class config {
 
     @SwitchProperty({
         name: "Auto GFS Refill",
-        description: "Automatically GFS ender pearls when you run out. (Buggy)",
+        description: "Automatically GFS ender pearls when you run out.",
         subcategory: 'Sacks',
         category: "General"
     })
