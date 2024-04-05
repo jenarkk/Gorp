@@ -1,5 +1,7 @@
-const PREFIX = "&b[&3Gorp&b] "
+const PREFIX = "&3[&bGorp&3]&r "
+const username = Player.getName()
 
 export default variables = {
-    PREFIX
+    PREFIX,
+    username
 }
