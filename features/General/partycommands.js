@@ -9,7 +9,7 @@ register("chat", () => {
 
 register("chat", () => {
   if(config.partyCommands){
-    ChatLib.chat(` \n${variables.PREFIX}\n&b&l-help &r&8&kw&r &7Displays this message. \n&b&l-leader &r&8&kw&r &7Invites the Gorp leader to the party. \n&b&l-walrus &r&8&kw&r &7Walrus. \n&b&l-gorp &r&8&kw&r &7Shows how many times Gorp has been said.\n `)
+    ChatLib.chat(` \n${variables.PREFIX}\n&b&l-help &r&8&kw&r &7Displays this message. \n&b&l-leader &r&8&kw&r &7Invites the Gorp leader to the party. \n&b&l-walrus &r&8&kw&r &7Walrus. \n&b&l-gorp &r&8&kw&r &7Shows how many times Gorp has been said.\n&b&l-pearls &r&8&kw&r &7Refills everyone in the party's ender pearls.\n&b&l-squirrel &r&8&kw&r &7Squirrel :D\n`)
   }
 }).setCriteria("-help").setContains()
 
