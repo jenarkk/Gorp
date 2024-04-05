@@ -1,4 +1,5 @@
 import config from "../../config"
+import variables from "../../utils/variables"
 let dead = false
 
 register("chat", () => {
@@ -7,7 +8,7 @@ register("chat", () => {
 
 register("chat", () => {
     dead = false
-}).setCriteria(`${username} was revived`).setContains()
+}).setCriteria(`${variables.username} was revived`).setContains()
 
 register("chat", () => {
     if(config.autoGfs){
