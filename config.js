@@ -22,7 +22,7 @@ class config {
 // -----------------------------------------------------------
 
     @SwitchProperty({
-        name: "Anti-Monkey",
+        name: "Anti Monkey",
         description: "Automatically kicks known monkeys",
         subcategory: 'Party',
         category: "General"
@@ -55,11 +55,22 @@ class config {
 
     @SwitchProperty({
         name: "Leap Reminder",
-        description: "Sends a chat message to leap to the Healer (use /hset to assign the reminder manually)",
+        description: "Sends a chat message to leap to the Healer (use /hset to assign the healer role manually)",
         subcategory: 'F7/M7',
         category: "Dungeons"
     })
     leapReminder = false;
+
+    @ButtonProperty({
+        name: "Github",
+        description: "Click for the Gorp Github",
+        category: "About",
+        subcategory: "Links",
+        placeholder: "Click!"
+    })
+    MyGithub() {
+        java.awt.Desktop.getDesktop().browse(new java.net.URI("https://github.com/jenarkk/Gorp"))
+    }
 
 // -----------------------------------------------------------
 
