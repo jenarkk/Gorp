@@ -1,3 +1,6 @@
+/// <reference types="../../../CTAutocomplete" />
+/// <reference lib="es2015" />
+
 import config from "../../config"
 import variables from "../../utils/variables"
 let HealerClass = "null"

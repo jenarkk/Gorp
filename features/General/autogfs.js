@@ -1,3 +1,6 @@
+/// <reference types="../../../CTAutocomplete" />
+/// <reference lib="es2015" />
+
 import config from "../../config"
 import variables from "../../utils/variables"
 let dead = false
@@ -21,4 +24,4 @@ register("step", () => {
     if (!pearlStack && config.autoGfsRefill && dead == false) {
         ChatLib.command(`pearlrefill`, true)
     }
-}).setDelay("0.5") 
+}).setDelay("1") 

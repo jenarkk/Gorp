@@ -1,3 +1,6 @@
+/// <reference types="../../../CTAutocomplete" />
+/// <reference lib="es2015" />
+
 import variables from "../../utils/variables"
 
 // hoverable message for when you run out

@@ -1,5 +1,6 @@
 /// <reference types="../../../CTAutocomplete" />
 /// <reference lib="es2015" />
+
 import axios from "../../../axios"
 import variables from "../../utils/variables"
 import { request } from "../../../requestV2"
@@ -18,7 +19,6 @@ function upload(image) {
     });
 };
 
-// Waifu stuff >.<
 let waifu = "";
 let imgur = "";
 function setWaifu() {
@@ -34,6 +34,13 @@ function setWaifu() {
 setWaifu();
 
 register("command", () => {
-    ChatLib.chat(`\n${variables.PREFIX}${waifu} &7has been uploaded to Imgur&r ${imgur}\n`);
+    if(imgur == ""){
+        ChatLib.chat(`&b-----------------------------------------------------\n${variables.PREFIX}&7You are currently being rate limited. Try again later\n&b-----------------------------------------------------`)
+    }
+    ChatLib.chat(`&b-----------------------------------------------------\n${variables.PREFIX}&8 ${waifu} &7has been uploaded to Imgur &8 ${imgur}\n&b-----------------------------------------------------`);
     setWaifu();
 }).setCommandName("wgorp")
+
+register("command", () => {
+    ChatLib.chat(`&b-----------------------------------------------------\n${variables.PREFIX}&7You are currently being rate limited. Try again later\n&b-----------------------------------------------------`)
+}).setCommandName("gorptest")
