@@ -1,4 +1,4 @@
-__Gorp Version 0.0.3__
+__Gorp Version 0.0.4__
 
 _Features_
 
