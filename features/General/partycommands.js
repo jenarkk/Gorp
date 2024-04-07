@@ -14,7 +14,7 @@ register("chat", () => {
   if(config.partyCommands){
     ChatLib.say(`Gorp Party Commands: -[help, pearls, leader, walrus, gorp, squirrel]`)
   }
-}).setCriteria(`{variables.username}: -help`).setContains()
+}).setCriteria(`-help`).setContains()
 
 register("chat", () => {
   if(config.partyCommands){
