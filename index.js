@@ -6,8 +6,9 @@ import "./features/Dungeons/leapreminder"
 import "./features/General/autokick"
 import "./features/General/partycommands"
 import "./features/General/gfscommands"
-import "./features/General/autogfs" 
 import "./features/General/random"
+import "./features/Dungeons/leapannounce"
+import "./features/Dungeons/termcall"
 
 register("command", () => {
   config.openGUI()
