@@ -8,7 +8,7 @@ import {
     @SwitchProperty,
     @TextProperty,
     @Vigilant,
-} from '../Vigilance/index';
+} from "../Vigilance/index";
 
 @Vigilant("Gorp", "Gorp", {
     getCategoryComparator: () => (a, b) => {
@@ -24,7 +24,7 @@ class config {
     @SwitchProperty({
         name: "Anti Monkey",
         description: "Automatically kicks known monkeys",
-        subcategory: 'Party',
+        subcategory: "Party",
         category: "General"
     })
     autoKick = false;
@@ -32,7 +32,7 @@ class config {
     @SwitchProperty({
         name: "Auto GFS",
         description: "Automatically GFS ender pearls at the start of runs. &c[UAYOR]",
-        subcategory: 'Sacks',
+        subcategory: "Sacks",
         category: "General"
     })
     autoGfs = false;
@@ -40,7 +40,7 @@ class config {
     @SwitchProperty({
         name: "Auto GFS Refill",
         description: "Automatically GFS ender pearls when you run out. &c[UAYOR]",
-        subcategory: 'Sacks',
+        subcategory: "Sacks",
         category: "General"
     })
     autoGfsRefill = false;
@@ -48,7 +48,7 @@ class config {
     @SwitchProperty({
         name: "Party Commands",
         description: "A few nice commands to have (use -help in chat)",
-        subcategory: 'Party',
+        subcategory: "Party",
         category: "General"
     })
     partyCommands = false;
@@ -56,10 +56,27 @@ class config {
     @SwitchProperty({
         name: "Leap Reminder",
         description: "Sends a chat message to leap to the Healer (use /hset to assign the healer role manually)",
-        subcategory: 'F7/M7',
+        subcategory: "F7/M7",
         category: "Dungeons"
     })
     leapReminder = false;
+
+    @SwitchProperty({
+        name: "Leap Announcer",
+        description: "Sends a chat message when you leap to someone",
+        subcategory: "General",
+        category: "Dungeons"
+    })
+    leapAnnounce = false;
+
+    @SelectorProperty({
+        name: "Terminal Calling",
+        description: "Sends a chat message for what terminal you want to call",
+        category: "Dungeons",
+        subcategory: "F7/M7",
+        options: ["None", "Dev", "1", "2", "3", "4"]
+    })
+    termCall = 0;
 
     @ButtonProperty({
         name: "Github",
