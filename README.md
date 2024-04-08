@@ -6,6 +6,7 @@ _Features_
 
 - Leap Reminder
 - Leap Announcer
+- Mask Announcer
 - Anti Monkey
 - Party Commands
 - GFS Commands
