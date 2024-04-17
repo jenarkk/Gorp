@@ -5,7 +5,7 @@ import config from "../../config"
 
 register("chat", () => {
     if(!config.termCall) return
-    if(config,termCall == 0) return
+    if(config.termCall == 0) return
     if(config.termCall == 1){ChatLib.command("pc Device")}
     if(config.termCall == 2){ChatLib.command("pc 1")}
     if(config.termCall == 3){ChatLib.command("pc 2")}
