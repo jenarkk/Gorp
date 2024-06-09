@@ -5,14 +5,10 @@
 ---
 
 ## 📜 Features
-- Leap Reminder
 - Leap Announcer
-- Mask Announcer
 - Anti Monkey
 - Party Commands
-- GFS Commands
-- GFS Refill
-- Terminal Calling
+- Auto GFS
 
 ## 🌐 How to install
 1. Download [`ChatTriggers`] and place it into your mods folder.
