@@ -1,0 +1,1 @@
+export const prefix = "&8&l[&bGorp&8&l] "

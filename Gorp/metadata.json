@@ -1,0 +1,8 @@
+{
+  "name": "Gorp",
+  "creator": "Jenark",
+  "version": "0.0.3",
+  "description": "gorp",
+  "requires": ["axios", "requestV2", "PogData"],
+  "entry": "index.js"
+}
